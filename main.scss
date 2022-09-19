@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+// ROOT
+:root{
+    // COLORS   main #525058 https://mycolor.space/?hex=%23525058&sub=1
+    --clr-hover:#C7FCEC;
+
+
+
+            //icons
+            --cDlr-icons-contact:#00C89B;
+    // FONTS
+    --font-nunito:'Nunito', sans-serif //weight - 300 400 500 600 700
+
+
+}
+
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+.home{
+    background-image: url(../projstron/img/porsche-911-gt3-rs-2023.png),linear-gradient(rgba(146, 143, 143, 0.863),rgba(255, 255, 255, 0.322));
+    background-blend-mode:soft-light;
+
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.karty > div{
+    height: 100%;
+}
+.karty .card{
+    background-blend-mode:soft-light;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.k1{
+    background-image: url(./img/png-clipart-porsche-911-gt2-car-porsche-911-gt3-rs-996-gt-3-porsche-convertible-car.svg),linear-gradient(rgba(146, 143, 143, 0.863),rgba(255, 255, 255, 0.322));
+}
+.k2{
+    background-image: url(./img/ecogolf.png),linear-gradient(rgba(146, 143, 143, 0.863),rgba(255, 255, 255, 0.322));
+}
+.k3{
+    background-image: url(./img/20191130_144013-removebg-preview.png),linear-gradient(rgba(146, 143, 143, 0.863),rgba(255, 255, 255, 0.322));
+}
+// NAVBAR // 
+nav .nav-item a{
+    color: var(--clr-icons-contact);
+}
+nav .nav-item a:hover{
+    color: var(--clr-hover);
+}
+.dropdown-menu a{
+    color: var(--clr-icons-contact);
+}
+.dropdown-menu li a:hover{
+    color: var(--clr-hover);
+}
+
+
+
+
+// CONTACT //
+#contact h2{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+#contact h5{
+    color: aliceblue;
+    font-size: .8rem;
+}
+#contact a{
+    color: white;
+    text-decoration: none;
+}
+#contact p{
+    color: white;
+}
+#contact ul{
+    padding: 0;
+}
+#contact i{
+   color: var(--clr-icons-contact);
+}
+footer{
+    color: var(--clr-icons-contact);
+    font-size: .8rem;
+}
+
+
+
