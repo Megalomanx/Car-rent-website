@@ -8,7 +8,11 @@
 
 :root {
   --clr-hover:#C7FCEC;
-  --cDlr-icons-contact:#00C89B;
+  --clr-main:#E69C24;
+  --clr-main-2:#c78925;
+  --text-main:#fff;
+  --text-secondary:#2D3339;
+  --clr-icons-contact:#00C89B;
   --font-nunito:"Nunito", sans-serif //weight - 300 400 500 600 700 ;
 }
 
@@ -16,12 +20,54 @@ a {
   color: rgb(255, 255, 255);
 }
 
+nav .nav-item a {
+  color: var(--text-main);
+}
+
+nav .nav-item a:hover {
+  color: var(--clr-main);
+}
+
+.dropdown-menu a {
+  color: var(--text-main);
+}
+
+.dropdown-menu li a:hover {
+  color: var(--clr-main);
+}
+
+.dropdown-item:hover {
+  background: #2b2e31;
+}
+
+.dropdown-toggle:enabled {
+  color: var(--clr-main);
+}
+
+.navbar-nav {
+  color: var(--clr-icons-contact);
+}
+
 .home {
-  background-image: url(../projstron/img/porsche-911-gt3-rs-2023.png), linear-gradient(rgba(146, 143, 143, 0.863), rgba(255, 255, 255, 0.322));
+  background-image: url(./img/2023-Porsche-911-GT3-RS-10-848x506.jpg), linear-gradient(rgba(92, 91, 91, 0.486), rgba(255, 255, 255, 0.322));
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center center;
   position: relative;
+}
+
+.fastdiv > .btn-primary {
+  color: var(--text-main);
+  background: var(--clr-main);
+  border: 1px solid var(--clr-main-2);
+  margin: 0.3rem;
+}
+
+.fastdiv > .btn-primary:hover {
+  color: var(--text-main);
+  background: var(--clr-main-2);
+  border: 1px solid var(--clr-main-2);
+  box-shadow: -2px 10px 15px 4px rgb(32, 32, 32);
 }
 
 .karty > div {
@@ -47,20 +93,25 @@ a {
   background-image: url(./img/20191130_144013-removebg-preview.png), linear-gradient(rgba(146, 143, 143, 0.863), rgba(255, 255, 255, 0.322));
 }
 
-nav .nav-item a {
-  color: var(--clr-icons-contact);
+.card-group > .btn-primary {
+  color: var(--text-main);
+  background: var(--clr-main);
+  border: 1px solid var(--clr-main-2);
+  margin: 0.3rem;
 }
 
-nav .nav-item a:hover {
-  color: var(--clr-hover);
+.newsletter-bg {
+  background-color: var(--clr-main);
 }
 
-.dropdown-menu a {
-  color: var(--clr-icons-contact);
+.accordion-button:not(.collapsed) {
+  color: var(--text-secondary);
+  background-color: rgba(199, 137, 37, 0.247);
 }
 
-.dropdown-menu li a:hover {
-  color: var(--clr-hover);
+.accordion-button:focus {
+  z-index: 3;
+  box-shadow: 0 0 0 0.25rem var(--clr-main-2);
 }
 
 #contact h2 {
