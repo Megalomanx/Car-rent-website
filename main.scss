@@ -16,16 +16,17 @@
     --text-secondary:#2D3339;
 
 
-    --clr-icons-contact:#00C89B;
+    --clr-icons-contact: var(--clr-main-2);
     // FONTS
     --font-nunito:'Nunito', sans-serif //weight - 300 400 500 600 700
 
 
 }
-
-a{
-    color: rgb(255, 255, 255);
+ul li, a{
+    text-decoration: none;
+    list-style-type: none;
 }
+
 
 
 
@@ -65,13 +66,13 @@ nav .nav-item a:hover{
     position: relative;
 }
 //  HERO
-.fastdiv > .btn-primary{
+.btn-primary{
     color: var(--text-main);
     background: var(--clr-main);
     border: 1px solid var(--clr-main-2);
     margin: .3rem;
 }
-.fastdiv > .btn-primary:hover{
+.btn-primary:hover{
     color: var(--text-main);
     background: var(--clr-main-2);
     border: 1px solid var(--clr-main-2);
@@ -133,8 +134,10 @@ nav .nav-item a:hover{
 // }
 
 
-
-
+//  MODAL
+p {
+    color: var(--text-secondary);
+}
 
 
 
@@ -163,6 +166,12 @@ nav .nav-item a:hover{
 footer{
     color: var(--clr-icons-contact);
     font-size: .8rem;
+}
+footer>div>a, .fa-circle-up{
+    color: var(--clr-hover);
+}
+footer>div>a:hover, .fa-circle-up:hover{
+    color: var(--clr-main);
 }
 
 

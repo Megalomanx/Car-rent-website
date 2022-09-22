@@ -10,8 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
-   
-    <title>Landing Page</title>
+    <title>Car Rent</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
@@ -24,7 +23,6 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Start</a>
-                         <!-- active -->
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -34,10 +32,10 @@
                   Samochody
                 </a>
                 <ul class="dropdown-menu bg-dark border-0" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#services">Premium</a></li>
-                  <li><a class="dropdown-item" href="#services">Ekonomiczne</a></li>
+                  <li><a class="dropdown-item" href="premium.html">Premium</a></li>
+                  <li><a class="dropdown-item" href="eco.html">Ekonomiczne</a></li>
                   <!-- <li><hr class="dropdown-divider"></li> -->
-                  <li><a class="dropdown-item" href="#services">Rodzinne</a></li>
+                  <li><a class="dropdown-item" href="family.html">Rodzinne</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -53,7 +51,7 @@
           </div>
         </div>
       </nav>
-           <!-- navbar END -->
+    <!-- ======================= -->
            <!-- HERO START -->
         <section class="bg-dark text-light p-5 text-center text-sm-start home" id="home">
             <div class="container py-5">
@@ -61,7 +59,7 @@
                     <div class="fastdiv">
                         <h1>Wypożyczalnia samochodów</h1>
                             <h3 class="my-4 "> Nowy Sącz</h3>
-                        <p class="lead my-4">Wypożyczamy samochody, którymi każdy chciałby jeździć.</p>
+                        <h5 class="lead my-4">Wypożyczamy samochody, którymi każdy chciałby jeździć.</h5>
                         <button class="btn btn-primary btn-lg" >Zobacz Nasze Samochody</button>
                         <button class="btn btn-primary btn-lg" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Skontaktuj się z nami</button>
 
@@ -70,7 +68,7 @@
                 </div>
             </div>
         </section>
-           <!-- HERO END -->
+    <!-- ======================= -->
            <!-- NEWSLETTER START -->
            <section class="newsletter-bg text-light p-5">
             <div class="container py-5">
@@ -85,7 +83,7 @@
                 </div>
             </div>
            </section>
-           <!-- NEWSLETTER END -->
+    <!-- ======================= -->
            <!-- uslugi START -->
            <section class="p-5" id="services">
             <div class="container py-5">
@@ -99,9 +97,9 @@
                                 <h3 class="card-title mb-3">
                                     Premium
                                 </h3>
-                                <p class="card-text">
+                                <h5 class="card-text">
                                     Sportowe auta z najwyższej półki
-                                </p>
+                                </h5>
                             </div>
                             <div class="card-group justify-content-center mb-2 bg-transparent"><a href="premium.html" class="btn btn-primary">Więcej</a></div>
                         </div>
@@ -115,11 +113,11 @@
                                 <h3 class="card-title mb-3">
                                     Ekonomiczne
                                 </h3>
-                                <p class="card-text">
+                                <h5 class="card-text">
                                     Ekonomiczne auta dzięki którym przejedziesz Europę na jednym tankowaniu
-                                </p>
+                                </h5>
                             </div>
-                            <div class="card-group justify-content-center mb-2 bg-transparent"><a href="#" class="btn btn-primary">Więcej</a></div>
+                            <div class="card-group justify-content-center mb-2 bg-transparent"><a href="eco.html" class="btn btn-primary">Więcej</a></div>
                         </div>
                     </div>
                     <div class="col-md karty">
@@ -131,17 +129,17 @@
                                 <h3 class="card-title mb-3">
                                     Rodzinne
                                 </h3>
-                                <p class="card-text">
+                                <h5 class="card-text">
                                     Ekonomiczne auta dzięki którym przejedziedz Europę na jednym tankowaniu
-                                </p>                                
+                                </h5>                                
                             </div>
-                            <div class="card-group justify-content-center mb-2 bg-transparent"><a href="#" class="btn btn-primary">Więcej</a></div>
+                            <div class="card-group justify-content-center mb-2 bg-transparent"><a href="family.html" class="btn btn-primary">Więcej</a></div>
                         </div>                      
                     </div>
                 </div>
             </div>
            </section>
-           <!-- uslugi END -->
+    <!-- ======================= -->
            <!-- ABOUT START -->
            <section class="p5" id="about">
             <div class="container py-5">
@@ -149,8 +147,8 @@
                     <div class="col-md">
                         <img src="./img/undraw_by_my_car_re_j3jt.svg" class='img-fluid'>
                     </div>
-                    <div class="col-md">
-                        <h2>O Nas</h2>
+                    <div class="col-md d-flex flex-column">
+                        <h2 class="" style="font-size: 2.6rem; padding-left: .6rem; width: 100%;">O Nas</h2>
                         <p>Podejmując decyzję o stworzeniu naszej wypożyczalni, doskonale zdawaliśmy sobie sprawę z tego, że dla wielu osób znalezienie samochodu, który spełni wszystkie wymagania, jest bardzo trudne. Dlatego mając na uwadze oczekiwania Klientów, a także kompleksowy charakter oferowanych usług, zadbaliśmy o to, aby nasza wypożyczalnia samochodów gwarantowała najwyższy standard, a przy tym była wzorem do naśladowania, nie tylko w południowej Polsce, ale w całym kraju.
                            Zapraszając Państwa do zapoznania się ofertą, którą przygotowaliśmy, chcemy zapewnić, że wszystkie samochody znajdują się w nienagannym stanie technicznym. Realizując nasze usługi, podchodzimy indywidualnie do każdego Klienta i zawsze staramy się zaproponować optymalne rozwiązania, przy ograniczeniu formalności do minimum.</p>
                         <!-- <div class="card-group justify-content-center mb-2 bg-transparent"><a href="#" class="btn btn-primary">Więcej</a></div> -->
@@ -158,15 +156,15 @@
                 </div>
             </div>
            </section>
-           <!-- ABOUT END   -->
+    <!-- ======================= -->
 
-           <!-- ABOUT START -->
+           <!-- DLACZEGO MY START -->
            <section id="dlaczego-my" class="bg-dark text-light">
             <div class="container py-5">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md p-5">
                         <h2>Samochody najlepszych marek</h2>
-                        <p>W naszej flocie znajdą Państwo wyłącznie samochody renomowanych marek, takich jak Lamborghini, Porsche, Mercedes, BMW i Ford. Skorzystanie z naszej oferty to zawsze pewność wynajmu w pełni komfortowego samochodu.</p>
+                        <h5 style="font-size: .9rem;">W naszej flocie znajdą Państwo wyłącznie samochody renomowanych marek, takich jak Lamborghini, Porsche, Mercedes, BMW i Ford. Skorzystanie z naszej oferty to zawsze pewność wynajmu w pełni komfortowego samochodu.</h5>
                     </div>
                     <div class="col-md">
                         <a href="#"><img src="./img/248-2486311_2020-lamborghini-huracan-evo-coupe-lamboghini-huracan-evo-removebg-preview.png" class="img-fluid "></a>
@@ -178,13 +176,13 @@
                     </div>
                     <div class="col-md p-5">
                         <h2>Przejrzyste warunki najmu</h2>
-                        <p>Znając bieżące oczekiwania Klientów zadbaliśmy o to, aby nasza oferta była<strong>kompleksowa i konkretna.</strong> Jednocześnie gwarantujemy minimum niezbędnych formalności, przy korzystnych i jasnych warunkach najmu.</p>
+                        <h5 style="font-size: .9rem;">Znając bieżące oczekiwania Klientów zadbaliśmy o to, aby nasza oferta była<strong>kompleksowa i konkretna.</strong> Jednocześnie gwarantujemy minimum niezbędnych formalności, przy korzystnych i jasnych warunkach najmu.</h5>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md p-5">
                         <h2>Bardzo dobre opinie</h2>
-                        <p>Dokładamy wszelkich starań, aby sprostać wymaganiom, bo satysfakcja naszych Klientów jest dla nas kluczowa. <strong>Dlatego bardzo cieszą nas pozytywne opinie,</strong> które dotychczas otrzymaliśmy.</p>
+                        <h5 style="font-size: .9rem;">Dokładamy wszelkich starań, aby sprostać wymaganiom, bo satysfakcja naszych Klientów jest dla nas kluczowa. <strong>Dlatego bardzo cieszą nas pozytywne opinie,</strong> które dotychczas otrzymaliśmy.</h5>
                     </div>
                     <div class="col-md">
                         
@@ -193,7 +191,7 @@
                 </div>
             </div>
            </section>
-           <!-- ABOUT END   -->
+    <!-- ======================= -->
            <!-- FAQ START   -->
            <section class="p-5" id="faq">
                 <div class="container py-5">
@@ -238,7 +236,7 @@
                 </div>
            </section>
 
-           <!-- FAQ  END   -->
+    <!-- ======================= -->
            <!-- CONTACT  START   -->
            <section class="" id="contact">
             <div class="container-fluid bg-dark">
@@ -249,13 +247,14 @@
                             <br>
                             Nowy Sącz
                         </h5>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" href="#exampleModalToggle" role="button" style="font-size:.8rem ;">Skontaktuj się z nami</button>
                     </div>
                     <div class="col-lg col-md-3 mx-auto">
                         <h2>Samochody</h2>
                         <ul>
-                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Premium</a></li>
-                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Ekonomiczne</a></li>
-                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Rodzinne</a></li>
+                            <li><a href="premium.html"><i class="fa-solid fa-chevron-right"></i> Premium</a></li>
+                            <li><a href="eco.html"><i class="fa-solid fa-chevron-right"></i> Ekonomiczne</a></li>
+                            <li><a href="family.html"><i class="fa-solid fa-chevron-right"></i> Rodzinne</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-5 col-md-6 col-xs-12 mx-auto">
@@ -267,20 +266,19 @@
                 </div>
             </div>
            </section>
-
-           <!-- CONTACT    END   -->
+    <!-- ======================= -->
            <!-- FOOTER    START   -->
            <footer class="p-3 bg-dark text-center text-white position-relative">
             <div class="container">
-                <p class="mb-0">
+                <h5 style="font-size: .7rem ;" class="mb-0">
                     Copyright &copy; grzesiek.matyjewicz00@gmail |  All Rights Reserved
-                </p>
+                </h5>
                 <a href="#" class="position-absolute bottom-0 end-0 px-5 py-4">
                     <i class="fa-regular fa-circle-up h1"></i>
                 </a>
             </div>
            </footer>
-           <!-- FOOTER      END   -->
+    <!-- ======================= -->
            <!-- MODAL START   -->
            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
@@ -315,7 +313,7 @@
                 </div>
                 <div class="modal-footer">
                   <button class="btn btn-primary" data-bs-toggle="modal">Zamknij</button>
-                  <button class="btn btn-primary">Wypełnij</button>
+                  <button class="btn btn-primary">Wyślij</button>
                 </div>
               </div>
             </div>
@@ -336,7 +334,7 @@
               </div>
             </div>
           </div>
-           <!-- MODAL   END   -->
+    <!-- ======================= -->
 
 
 
