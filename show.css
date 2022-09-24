@@ -25,7 +25,22 @@ p {
 .modal-content> div > p{
     color: var(--text-secondary);
 }
+.row{
+    display: flex;
+    margin: 0 auto;
+}
+@media screen and (max-witdh: 585px ) {
+    .row {    
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+}
 
+.custom{
+    width: auto;
+    max-width: 350px;
+    /* min-width: 220px; */
+}
 
 .card-body{
     color: var(--text-main);
@@ -151,27 +166,27 @@ p {
 /* family */
 .f1{
     background-image: url(./aFamily/zion.jpg) ;
-    background-position: -10rem;
+    background-position: center center;
 }
 .f2{
     background-image: url(./aFamily/sentinel-xs.jpg) ;
-    background-position: -10rem;
+    background-position: center center;
 }
 .f3{
     background-image: url(./aFamily/rhinehart.jpg) ;
-    background-position: -10rem;
+    background-position: center center;
 }
 .f4{
     background-image: url(./aFamily/oracle-1.jpg) ;
-    background-position: -10rem;
+    background-position: center center;
 }
 .f5{
     background-image: url(./aFamily/images_gta-5_vehicles_suvs_main_rocoto.webp) ;
-    background-position: -10rem;
+    background-position: center center;
 }
 .f6{
     background-image: url(./aFamily/images_gta-5_vehicles_sports_main_sultan-rs-classic.webp) ;
-    background-position: -10rem;
+    background-position: center center;
 }
 
 

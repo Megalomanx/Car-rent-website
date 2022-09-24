@@ -20,18 +20,50 @@
     // FONTS
     --font-nunito:'Nunito', sans-serif //weight - 300 400 500 600 700
 
-
 }
 ul li, a{
     text-decoration: none;
     list-style-type: none;
 }
 
-
-
-
         // NAVBAR // 
+.navbar-custom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 
+}
+.navbar-custom {
+    background: rgba( 33, 37, 41, 0.565 );
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(97, 97, 97, 0.568);
+}
+.dropdown-menu {
+    padding: .4rem .4rem .2rem;
+    background: rgba(33, 37, 41, 0.471);
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 6;
+}
+.nav-item .dropdown-menu{
+    margin-top: 0.2rem;
+}
+.dropdown-item{
+    background: rgba( 33, 37, 41, 0.065 );
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 nav .nav-item a{
     color: var(--text-main);
 }
@@ -53,10 +85,41 @@ nav .nav-item a:hover{
 .navbar-nav{
     color: var(--clr-icons-contact);
 }
+.navbar-toggler{
+    color: var(--clr-main);
+    border: none;
+}
+.fa-bars{
+    color: var(--clr-main);
+}
+
+@media (max-width: 768px) {
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+    }
+    .navbar-custom, .dropdown-item{
+        background: rgba( 33, 37, 41, 0.565 );
+        // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .dropdown-menu {
+        background: transparent;
+    }
+  } 
+
 // NAVBAR END
 
 
 
+
+//  HERO\
 .home{
     background-image: url(./img/2023-Porsche-911-GT3-RS-10-848x506.jpg),linear-gradient(rgba(92, 91, 91, 0.486),rgba(255, 255, 255, 0.322));
     background-blend-mode:soft-light;
@@ -65,7 +128,6 @@ nav .nav-item a:hover{
     background-position: center center;
     position: relative;
 }
-//  HERO
 .btn-primary{
     color: var(--text-main);
     background: var(--clr-main);
@@ -80,7 +142,6 @@ nav .nav-item a:hover{
 }
 
 
-
 //  CARDS
 .karty > div{
     height: 100%;
@@ -91,9 +152,8 @@ nav .nav-item a:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .k1{
-    background-image: url(./img/png-clipart-porsche-911-gt2-car-porsche-911-gt3-rs-996-gt-3-porsche-convertible-car.svg),linear-gradient(rgba(146, 143, 143, 0.863),rgba(255, 255, 255, 0.322));
+    background-image: url(./img/porsche-911-no-bg.png), linear-gradient(rgba(146, 143, 143, 0.863),rgba(255, 255, 255, 0.322));
 }
 .k2{
     background-image: url(./img/ecogolf.png),linear-gradient(rgba(146, 143, 143, 0.863),rgba(255, 255, 255, 0.322));
@@ -118,20 +178,15 @@ nav .nav-item a:hover{
 }
 
 
+//  FAQ
 .accordion-button:not(.collapsed) {
     color: var(--text-secondary);
     background-color: rgba(199, 137, 37, 0.247) ;
 }
-  
 .accordion-button:focus {
     z-index: 3;
-    box-shadow: 0 0 0 .25rem var(--clr-main-2) ;
+    box-shadow: 0 0px 4px .15rem var(--clr-main-2) ;
   }
-
-
-// .accordion-header:active{
-//     background: #c78925;
-// }
 
 
 //  MODAL
